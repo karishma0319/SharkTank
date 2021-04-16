@@ -1,0 +1,98 @@
+body{
+    border-radius: 4px;
+    margin:0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-image:url("https://www.photoshopsupply.com/wp-content/uploads/2019/05/subtle-patterns.jpg");
+    background-size:stretch;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 400px;
+    max-width: 400px;
+    margin:1rem;
+    padding:2rem;
+    border-radius: 4px;
+    box-shadow: 0 0 40px rgba(0,0, 0, 0.2);
+    background: #ffff;
+}
+
+.BtnLogin{
+    width: 100%;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    font-size: 17px;
+    border:none;
+    border-radius: 4px;
+    outline:none;
+    cursor: pointer;
+    background:rgb(31, 31, 128);
+    color: white;
+}
+.BtnLogin:hover{
+    background:rgb(4, 4, 77);
+}
+
+.BtnLogin:active{
+    transform:scale(0.98);
+}
+
+
+.BtnSignUp{
+    width: 100%;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    font-size: 17px;
+    border:none;
+    border-radius: 4px;
+    outline:none;
+    cursor: pointer;
+    background:rgb(31, 31, 128);
+    color: white;
+}
+.BtnSignUp:hover{
+    background:rgb(4, 4, 77);
+}
+
+.BtnSignUp:active{
+    transform:scale(0.98);
+}
+
+.message_error{
+    text-align: center;
+    margin-bottom: 1rem;
+    color:red;
+}
+
+.form_title{
+    text-align: center;
+    color: rgb(31, 31, 128);
+    margin-bottom: 1rem;
+}
+
+.form_input{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+}
+
+.form_input_main{
+    display:block;
+    width:100%;
+    padding:0.50rem;
+}
+
+.form_hidden{
+    display:none;
+}

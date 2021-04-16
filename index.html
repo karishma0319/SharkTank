@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <header>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title> SHARK TANK - Login page </title>
+        <link href="login style.css" rel="stylesheet" type="text/css" />
+        <h1 style="text-align: center ;"  >Shark Tank</h1>
+        <p style="text-align: center;"> This place is gonna be <i>JAW</i> dropping ... Get it? &#x1F988;</p>
+        <header>
+
+</head>
+<body> 
+    <div class="container">
+      <form class="Login" id="Log"> 
+        <h1 class="form_title"> Login </h1>
+        <div class="form_input-group">
+            <input type="email" class="form_input" id="emailLog" placeholder="Email" required> <br>
+            <input type="password" class="form_input" id="passwordLog" placeholder="Password"> 
+        </div>
+        <br>
+        <button class="BtnLogin" type="submit" onclick="validate(event)">Login</button>
+        <p class="form_text">
+        <a href="#" class="form_link" id="CreateAccount">Don't have an account? Create one here. </a>
+    </p>
+    </form> 
+    <form class="SignUp form_hidden" id="SignUp"> 
+        <h1 class="form_title"> Signup</h1>
+        <div class="form_input-group">
+            <input type="text" class="form_input" id="usernameSU"placeholder="Username" minlength="5" required> <br>
+            <input type="email" class="form_input" id="emailSU" placeholder="Email" required> <br>
+            <input type="password" class="form_input" id="passwordSU" placeholder="Password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"> 
+        </div>
+        <br>
+        <button class="BtnSignUp" type="submit">Sign Up</button>
+        <p class="form_text">
+        <a href="#" class="form_link" id="LoginExists"> Have an account already? Click here to login </a>
+    </p>
+    </form> 
+    </div>
+
+    <script src="login Java.js"></script>
+</body>    
+</html> 

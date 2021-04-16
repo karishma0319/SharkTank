@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UWI Web Design Project">
+    <meta name="keywords" content="INFO1601, uwi, web, Design">
+    <link rel="stylesheet" href="main.css">
+    <title>Shark Tank</title>
+</head>
+
+
+<body class="body">
+    <header class="MainHeader">
+        <div class="Header1">
+            <p style="font-size: large;">🦈Shark Tank🦈 </p>
+            <div id="pagelinks">
+                <a class="link" href="main.html">Home</a>
+                <a class="link" href="about.html">About</a>
+                <a class="link" href="index.html" onclick="confirm_logout()">Log Out</a>
+         
+            </div>
+        </div>
+    </header>
+    <aside class="Aside">
+        <header>
+            <div style="color: lightseagreen;">
+                <img class="usericon" src="user icon.jpg" alt="User Image">
+
+            </div>
+            <p id = "userName" class="UserName">
+            </p>
+        </header>
+
+        <div id="UserFollower">
+            <p style="text-align: center;"> <strong>Demo User</strong> </p>
+            <hr> <br>
+            <div class="followers"> Followers: 6</div>
+            <br>
+            <hr> <br>
+            <div id="num_following" class="following"> Following: 8</div>
+        </div>
+
+    </aside>
+    <main class="Post">
+        <p>
+            <strong>Demo User</strong>
+        </p>
+        <form id="FirstForm">
+            <textarea id="post1" rows="5" cols="50" placeholder="Write Post Here ✍️..."></textarea>
+        </form>
+        <button id="FirstButton" onclick="WritePost()">
+            <span class="submit"> Submit Post! </span>
+        </button>
+    </main>
+
+    <aside class="Categories">
+        <div id="label"> <strong style=" padding: 5px; display:block; text-align: center;">Investment
+                Categories</strong> </div> <br>
+        <hr>
+        <img src="STOCK_MARKET-11.jpg" alt="Investment Image" width="40%" height="40%"><br>
+        <a href="https://www.nerdwallet.com/article/investing/how-to-invest-in-stocks" target="_blank">✔️Stock
+            Investments📈</a> <br><br>
+        <a href="https://www.investopedia.com/articles/investing/110614/most-important-factors-investing-real-estate.asp"
+            target="_blank">✔️Real
+            Estate Investments📉</a><br><br>
+        <a href="https://www.thebalance.com/investing-in-index-funds-for-beginners-356318" target="_blank">✔️Index Funds
+            Investments📈</a><br><br>
+        <a href="https://www.nerdwallet.com/article/investing/cryptocurrency-7-things-to-know" target="_blank">
+            ✔️Cryptocurrency
+            Investments📉</a><br>
+    </aside>
+
+    <section id="RecentPost">
+        <br>
+        <div class="AllPost">
+            <div class="AllPost1">
+                <p>
+                    <strong>John Doe</strong>
+                </p> "An investment in knowledge pays the best interest." — Benjamin Franklin
+            </div> <br>
+           <div class = "likeButton">
+                <button id="like_button" value="No" class="like" onclick="likeToggle()">👍🏼Like</button>
+			</div>
+			<br>
+			<div class = "followButton">
+                <button id="follow_button" value="0" onclick="followToggle()" class="FollowPost">❤️Follow</button>
+                
+            </div>
+        </div>
+        <br>
+        <div class="AllPost">
+            <div class="AllPost1">
+                <p>
+                    <strong> Sally Smith</strong>
+                </p> With a good perspective on history, we can have a better understanding of the past and present, and
+                thus a clear vision of the future trends.
+
+            </div> <br>
+            <div class = "likeButton">
+                <button id="like_button" value="No" class="like" onclick="likeToggle()">👍🏼Like</button>
+			</div>
+			<br>
+			<div class = "followButton">
+                <button id="follow_button" value="0" onclick="followToggle()" class="FollowPost">❤️Follow</button>
+                
+            </div>
+        </div>
+        <br>
+        <div class="AllPost">
+            <div class="AllPost1">
+                <p>
+                    <strong>Amy Styles</strong>
+                </p> "It's not whether you're right or wrong that's important, but how much money you make when you're
+                right and how much you lose when you're wrong." — George Soros
+            </div> <br>
+            <div class = "likeButton">
+                <button id="like_button" value="No" class="like" onclick="likeToggle()">👍🏼Like</button>
+			</div>
+			<br>
+			<div class = "followButton">
+                <button id="follow_button" value="0" onclick="followToggle()" class="FollowPost">❤️Follow</button>
+                
+            </div>
+        </div>
+        <br>
+    </section>
+    <iframe class="video" width="25%" height="200px" src="https://www.youtube.com/embed/sWVVazhSFuE"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>
+
